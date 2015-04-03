@@ -1,0 +1,36 @@
+{
+    "name": "mha2015-demo",
+    "version": "0.1.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/larsthorup/mha2015-demo.git"
+    },
+    "dependencies": {
+      "bluebird": "^2.3.1"
+    },
+    "devDependencies": {
+        "chai": "^2.1.0",
+        "chai-as-promised": "^4.1.1",
+        "coveralls": "^2.11.1",
+        "istanbul": "^0.3.0",
+        "jshint": "^2.6.3",
+        "jshint-stylish": "^1.0.0",
+        "mocha": "^2.0.1",
+        "sinon": "^1.10.3",
+        "sinon-chai": "^2.5.0"
+    },
+    "author": {
+        "name": "Lars Thorup",
+        "web": "https://github.com/larsthorup"
+    },
+    "scripts": {
+        "-- fast feedback ": "--",
+        "lint": "jshint --verbose --reporter=node_modules/jshint-stylish/stylish.js src test",
+        "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --require test/setup --recursive test",
+        "cover-report": "opener dist/coverage/lcov-report/index.html",
+        "test": "npm run lint && npm run cover"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md"
+}
